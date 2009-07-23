@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>PFSinatra :: <%= @title || 'Home' %></title>
+  <style>
+    html {
+      background-color: #eee;
+			font-size: 10pt;
+			font-family: arial, helvetica, sans-serif;
+    }
+
+		input {
+			border: 1px solid #000;	
+		}
+
+		#content {
+			width: 600px;
+			margin: auto;
+			padding: 1em;
+			background-color: #ddd;
+		}
+
+		.shead {
+			font-size: 12pt;
+		}
+			
+		.sbody {
+			font-weight: 900;
+			margin-left: 1em;
+		}
+
+		.sfooter a {
+			color: #000;
+			font-style: italic;
+		}			
+  </style>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
